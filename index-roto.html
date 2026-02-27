@@ -9,18 +9,18 @@
 </head>
 
 <body>
-    <header class="bg-fondo py-5 px-10 flex justify-between item-center h-15vh">
-        <a href="index.html">
-            <img class="w24" src="img/logo.jpg" alt="logo de BTS">
+    <header class="bg-fondo py-5 px-10 flex justify-between item-center h-[15vh]">
+        <a href="index-roto.html">
+            <img class="w-24" src="img/logo.jpg" alt="logo de BTS">
         </a>
         <div class="w-8 flex-col gap-2 lg:hidden group">
             <div class="rounded w-full h-1 bg-white group-hover:bg-azul group-active:bg-rosa"></div>
-            <div class="rounded w-full h-1 bg-white"></div>
             <div class="rounded w-full h-1 bg-white group-hover:bg-azul"></div>
+            <div class="rounded w-full h-1 bg-white group-hover:bg-azul group-active:bg-rosa"></div>
         </div>
         <nav class="hidden lg:flex">
-            <ul class="text-white flex gap4">
-                <li><a class="hover:text-morado active-text-rosa" href="#">Próximas fechas</a></li>
+            <ul class="text-white flex gap-4">
+                <li><a class="hover:text-morado active:text-rosa" href="#">Próximas fechas</a></li>
                 <li><a class="hover:text-morado active:text-rosa" href="#">Comprar entradas</a></li>
                 <li><a class="hover:text-morado active:text-rosa" href="#">Tienda</a></li>
             </ul>
@@ -29,14 +29,14 @@
 
     <main>
         <section
-            class="bg-linear-gradient(to_bottom,rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url('../img/bts-banner.webp') h-[85vh] bg-cover bg-center flex justify-center items-center text-white flex-col">
-            <h1 class="text6xl">BTS</h1>
+            class="bg-linear-gradient(to_bottom,rgba(0,0,0,0.8),rgba(0,0,0,0.6)),bg-[url(/img/bts-banner.webp)] h-[85vh] bg-cover bg-center flex justify-center items-center text-white flex-col">
+            <h1 class="text-6xl">BTS</h1>
             <button class="btn">
-                <span class="btn_span">Comprar entradas</span>
+                <span class="btn__span">Comprar entradas</span>
             </button>
         </section>
 
-        <section class="flex flex-col items-center lg:flex lg:items-stretch justify-center gap8">
+        <section class="flex flex-col items-center lg:flex-row lg:items-stretch justify-center gap-8">
             <article class="card shadow-morado">
                 <img class="h-2/3" src="img/jim.webp" alt="Imagen de Jim">
                 <div class="px-6 py-4 flex flex-col gap-4 item-center">
@@ -51,7 +51,7 @@
             <article class="card shadow-azul">
                 <img class="h-2/3 w-full" src="img/rm.webp" alt="Imagen de RM">
                 <div class="px-6 py-4 flex flex-col gap-4 items-center">
-                    <h2 class="uppercase font-bold text2xl">RM</h2>
+                    <h2 class="uppercase font-bold text-2xl">RM</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, nobis?</p>
                     <button class="btn w-4/5">
                         <span class="btn__span">Leer bio</span>
@@ -60,7 +60,7 @@
             </article>
 
             <article class="card shadow-rosa">
-                <img class="h-2/3 wfull" src="img/suga-bts.webp" alt="Imagen de Suga">
+                <img class="h-2/3 w-full" src="img/suga-bts.webp" alt="Imagen de Suga">
                 <div class="px-6 py-4 flex flex-col gap-4 items-center">
                     <h2 class="uppercase font-bold text-2xl">Suga</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, nobis?</p>
@@ -75,10 +75,10 @@
 
     <footer></footer>
 
-    <a class="fixed bottom4 right-4" href="">
+    <a class="fixed bottom-4 right-4" href="">
         <img src="img/whatsapp.svg" alt="">
     </a>
-
+    <script src="src/js/script.js"></script>
 </body>
 
 </html>
